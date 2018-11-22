@@ -80,6 +80,7 @@ public class Main2Activity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(Main2Activity.this,"Successfully signed out",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(Main2Activity.this, MainActivity.class));
+                        finish();
                     }
                 });
     }
